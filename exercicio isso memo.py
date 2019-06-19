@@ -3,6 +3,8 @@
 
 def soma_dois_inteiros(a, b):
     """ Recebe dois números inteiros, e retorna a sua soma"""
+    soma = a+b
+    return soma
 
 
 def metro_para_milimetros(metros):
@@ -95,40 +97,39 @@ def tinta(metros_pintar):
 def duzias(ovos):
     ''' Receba o número de ovos e devolva a quantidade de dúzias
     correspondente. Considere sempre dúzias cheias, arredondando pra
-    cima se necessário.
-    '''
+    cima se necessário.'''
     duzias = ovos / 12
     return round(duzias)
 
 
 def decompor_numero(numero):
-    '''
-    Leia um número inteiro menor que 1000 e devolva a quantidade de
+    ''' Leia um número inteiro menor que 1000 e devolva a quantidade de
     centenas, dezenas e unidades do mesmo.
-    Obs.: não utilize operações com strings
-    '''
+    Obs.: não utilize operações com strings '''
+    
 
 
 def palindrome(texto):
     """Faça uma função que verifique se uma textro passado é palíndrome,
     isto é, se é igual quando lido de trás pra frente."""
-    texto[::-1] = texto1
-        if texto1 == texto
-            Resposta = True
-        else:
-            Resposta = False
-    return dopiat
 
 
 def troca_caixa(texto):
     """Vogais ficam em caixa alta (maiúsculas)
     Consoantes ficam em caixa baixa (minúsculas)"""
+    texto = texto.replace("a", "A")
+    texto = texto.replace("e", "E")
+    texto = texto.replace("i", "I")
+    texto = texto.replace("o", "O")
+    texto = texto.replace("u", "U")
+    texto = texto.replace("S", "s")
+    texto = texto.replace("C", "c")
+    return texto
 
 
 def imprime_mes_por_extenso(data):
     """Faça um programa que solicite a data de nascimento (dd/mm/aaaa)
-    e imprima com o nome do mês por extenso
-    """
+    e imprima com o nome do mês por extenso  """
 
 
 def encontra_caracter(texto, caracter_procurado):
@@ -186,7 +187,18 @@ def leet(texto):
     Converte texto em leet
     troca = {'a':'4','e':'3','g':'9','i':'1','s':'5','t':'7','o':'0'}
     '''
-    texto.replace
+    texto = texto.replace("a", "4")
+    texto = texto.replace("E", "3")
+    texto = texto.replace("e", "3")
+    texto = texto.replace("g", "9")
+    texto = texto.replace("i", "1")
+    texto = texto.replace("s", "5")
+    texto = texto.replace("t", "7")
+    texto = texto.replace("T", "7")
+    texto = texto.replace("o", "0")
+    texto = texto.replace("O", "0")
+    return texto
+
 
 def apaga(s, n):
     """
@@ -195,6 +207,7 @@ def apaga(s, n):
     apaga('kitten', 1) -> 'ktten'
     apaga('kitten', 4) -> 'kittn'
     """
+    return s[:n] + s[n+1:]
 
 
 # Área de testes: só mexa aqui se souber o que está fazendo!
